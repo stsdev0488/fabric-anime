@@ -23,6 +23,7 @@ function App() {
         top: index === 0 ? 100 : textCoordinates[index - 1][1].y,
         left: index === 0 ? 100 : textCoordinates[index - 1][1].x,
         fill: '#FFFFFF',
+        opacity: 0,
       })
     );
     
