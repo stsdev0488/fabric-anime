@@ -67,7 +67,13 @@ function App() {
           canvasObj.renderAll();
         }
       });
-  }, [])
+    return () => {
+      anime.remove(opacity1);
+      anime.remove(opacity2);
+      canvasObj.remove();
+    }
+  }, []);
+
   return (
     <div className="App">
       <div className="main">
